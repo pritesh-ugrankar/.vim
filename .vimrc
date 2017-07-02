@@ -1,6 +1,8 @@
 " → Preamble "{{{
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Personal VIMRC Settings. Might not work on other versions.
+"Personal VIMRC Settings. 
+"Might not work on other versions.
+"This works perfectly on linux.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " }}}
 " → Settings "{{{
