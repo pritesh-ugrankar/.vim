@@ -1,0 +1,41 @@
+
+Initialize Git
+git init
+
+Check if the remote is set
+git remote -v
+
+Configure the username and email
+git config user.name "pritesh-ugrankar"
+git config user.email "pritesh.manohar.ugrankar@gmail.com"
+
+Check the status
+git status
+
+Add files to the git 
+git add *
+
+Check status again.
+git status
+
+Commit the files
+git commit -m "Compiled vim8.0, added the .deb file and the compiling instructions"
+
+Push the files to github
+git push
+
+In case you want to remove a file from the github repo.
+git rm --cached vim-8.0_20171210-1_amd64.deb 
+
+
+Add again
+git add *
+
+Check status 
+git status
+
+Commit again.
+git commit -m "Compiled Vim 8.0 from source"
+
+Push again.
+git push origin master 
