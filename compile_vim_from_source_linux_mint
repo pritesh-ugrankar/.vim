@@ -1,0 +1,38 @@
+Install lua
+sudo apt install lua5.3 liblua5.3-dev 
+
+Install the other required libraries
+
+NOTE:- Check the version numbers of the libs, they might have changed!!
+
+sudo apt install libncurses5-dev libgnome2-dev libgnomeui-dev \
+    libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
+    libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev python3-dev \
+    ruby-dev ruby2.3 ruby2.3-dev libperl-dev libperl5.22 lua5.3 liblua5.3-dev
+
+Link the Lua libraries
+sudo ln -s /usr/include/lua5.3 /usr/include/lua
+sudo ln -s /usr/lib/x86_64-linux-gnu/liblua5.3.so /usr/local/lib/liblua.so
+
+Install checkinstall package:
+sudo apt install checkinstall
+
+Get Vim
+git clone https://github.com/vim/vim
+
+CD to the vim directory:
+
+./configure --with-features=huge \
+            --enable-largefile \
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-pythoninterp=yes \
+            --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
+            --enable-python3interp=yes \
+            --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
+            --enable-perlinterp=yes \
+            --enable-luainterp=yes \
+            --enable-gui=gtk2 \
+            --enable-cscope \
+            --prefix=/usr/local
+make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
