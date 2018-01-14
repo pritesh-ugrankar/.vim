@@ -5,6 +5,14 @@ git init
 Check if the remote is set
 git remote -v
 
+
+If the remote repository is not configured add 
+git remote add origin https://github.com/pritesh-ugrankar/linux-mint-wallpapers
+
+Command to remove remote repo:
+
+git remote remove origin
+
 Configure the username and email
 git config user.name "pritesh-ugrankar"
 git config user.email "pritesh.manohar.ugrankar@gmail.com"
