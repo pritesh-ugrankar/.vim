@@ -1,0 +1,7 @@
+sudo apt remove xserver-xorg-video-intel 
+
+sudo apt install build-essential git liblua5.3-dev lua5.3
+
+sudo add-apt-repository ppa:linrunner/tlp
+
+sudo apt update && sudo apt install tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
