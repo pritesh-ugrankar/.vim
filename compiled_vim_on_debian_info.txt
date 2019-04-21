@@ -1,0 +1,12 @@
+Compiled vim on Debian Stretch 9.8 WITH BACKPORTED KERNEL.
+PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+NAME="Debian GNU/Linux"
+VERSION_ID="9"
+VERSION="9 (stretch)"
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+Kernel Info (BACKPORTED KERNEL)
+Linux debian 4.19.0-0.bpo.4-amd64 #1 SMP Debian 4.19.28-2~bpo9+1 (2019-03-27) x86_64 GNU/Linux
