@@ -84,6 +84,7 @@ let s:pink        = { "gui": "#F92772", "cterm": "197" }
 let s:green       = { "gui": "#A6E22D", "cterm": "148" }
 let s:aqua        = { "gui": "#66d9ef", "cterm": "81" }
 let s:yellow      = { "gui": "#E6DB74", "cterm": "186" }
+let s:SYellow     = { "gui": "#FFFF33", "cterm": "226" }
 let s:orange      = { "gui": "#FD9720", "cterm": "208" }
 let s:purple      = { "gui": "#ae81ff", "cterm": "141" }
 let s:red         = { "gui": "#e73c50", "cterm": "196" }
@@ -108,7 +109,8 @@ call s:h("StatusLine",    { "fg": s:warmgrey,   "bg": s:black,        "format": 
 call s:h("StatusLineNC",  { "fg": s:darkgrey,   "bg": s:warmgrey,     "format": "reverse" })
 call s:h("TabLine",       { "fg": s:white,      "bg": s:darkblack,    "format": "reverse" })
 call s:h("Visual",        {                     "bg": s:lightgrey })
-call s:h("Search",        { "fg": s:black,      "bg": s:yellow })
+"call s:h("Search",        { "fg": s:black,      "bg": s:yellow })
+call s:h("Search",        { "fg": s:SYellow,      		"format": "bold,underline" })
 call s:h("MatchParen",    { "fg": s:black,      "bg": s:purple })
 call s:h("Question",      { "fg": s:yellow })
 call s:h("ModeMsg",       { "fg": s:yellow })
